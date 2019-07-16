@@ -30,7 +30,7 @@ def read_excel():
     return list2
 
 def bpmbase(listinfo):
-    conn = pymssql.connect(server="10.0.101.19", user="FM", password="qaz123.1", database="DingXinBiz", charset='utf8')
+    conn = pymssql.connect(server="ip", user="username", password="qaz123.1", database="dataname", charset='utf8')
     print(conn)
     cursor = conn.cursor()
     info = []
@@ -56,7 +56,7 @@ def bpmbase(listinfo):
 def  insert_store(info):
     conn = pymysql.connect(host="172.16.3.29"
                            , user="root",
-                           password="dicos8888",
+                           password="",
                            database="ddos_misc",
                            charset="utf8")
     cursor = conn.cursor()
@@ -104,7 +104,7 @@ def  insert_store(info):
 def instert_ksf_ios(info):
     conn =pymysql.connect(host="172.16.3.29"
                            , user="root",
-                           password="dicos8888",
+                           password="",
                            database="dicos_ios",
                            charset="utf8")
     cursor = conn.cursor()
